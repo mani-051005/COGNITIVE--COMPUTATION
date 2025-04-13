@@ -1,4 +1,16 @@
-# Question 1: Favorite Topic Paragraph
+import nltk
+import re
+import string
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.probability import FreqDist
+from nltk.stem import PorterStemmer, LancasterStemmer, WordNetLemmatizer
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
+# Question 1: Favorite Topic Paragraph i.e technology
 text = """I love exploring the world of artificial intelligence. It's fascinating how machines can learn and mimic human behavior.
 From self-driving cars to voice assistants, AI has transformed technology. It is revolutionizing industries and solving complex problems.
 Learning about neural networks, natural language processing, and deep learning excites me.
